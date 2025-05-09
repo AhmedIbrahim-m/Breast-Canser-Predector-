@@ -20,7 +20,7 @@ def get_scaled_values(input_dict):
   return scaled_dict
   
 def  get_clean():
-    data = pd.read_csv("C:/Users/Administrator/Downloads/archive (5)/data.csv")
+    data = pd.read_csv("data.csv")
   
     data = data.drop(['Unnamed: 32', 'id'], axis=1)
     data['diagnosis'] = data['diagnosis'].map({'M': 1 , 'B': 0})
